@@ -464,8 +464,12 @@ body {
 }
 
 .skill-group-item {
-  padding: 24px 0;
+  padding: 48px 0;
   border-bottom: 1px solid #111111;
+}
+
+.skill-group-item:first-child {
+  padding-top: 20px;
 }
 
 .skill-group-item:last-child {
@@ -483,24 +487,24 @@ body {
 .skill-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 14px;
+  gap: 14px;
+  margin-top: 20px;
 }
 
 .skill-tag {
   display: inline-block;
-  padding: 8px 20px;
-  border: 1px solid #111111;
+  padding: 8px 22px;
+  border: 1.5px solid var(--color-terracotta);
   border-radius: 30px;
   font-family: var(--font-sans);
   font-size: 22px;
-  color: #111111;
+  color: var(--color-terracotta);
   background-color: var(--color-white);
   transition: var(--transition-smooth);
 }
 
 .skill-tag:hover {
-  background-color: #111111;
+  background-color: var(--color-terracotta);
   color: var(--color-white);
 }
 
