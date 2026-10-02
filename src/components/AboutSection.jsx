@@ -1,5 +1,20 @@
 import React from 'react';
 
+const skillCategories = [
+  {
+    name: 'Figma',
+    tags: []
+  },
+  {
+    name: 'Adobe Creative Suite',
+    tags: ['Illustrator', 'InDesign', 'Photoshop', 'After Effects', 'Premiere Pro']
+  },
+  {
+    name: 'AI Tools & Prototyping',
+    tags: ['LLMs', 'Generative Image & Video', 'Vibe Coding', 'AI Prototyping']
+  }
+];
+
 export default function AboutSection() {
   return (
     <section id="about" className="container about-section">
@@ -20,15 +35,20 @@ export default function AboutSection() {
         <div className="resume-details">
           <div className="skills-section">
             <h3 className="skills-title">Skills</h3>
-            <ul className="skills-list">
-              <li className="skill-item">Figma</li>
-              <li className="skill-item">
-                Adobe Creative Suite / Illustrator, Indesign, Photoshop, After Effects, Premiere Pro
-              </li>
-              <li className="skill-item">
-                AI Tools & Prototyping / LLMs, Generative Image & Video, Vibe Coding, Ai Prototyping
-              </li>
-            </ul>
+            <div className="skills-group-list">
+              {skillCategories.map((group, index) => (
+                <div key={index} className="skill-group-item">
+                  <h4 className="skill-group-name">{group.name}</h4>
+                  {group.tags.length > 0 && (
+                    <div className="skill-tags">
+                      {group.tags.map((tag, idx) => (
+                        <span key={idx} className="skill-tag">{tag}</span>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
