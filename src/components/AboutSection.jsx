@@ -30,20 +30,6 @@ export default function AboutSection() {
               </li>
             </ul>
           </div>
-
-          <div className="work-history-section">
-            <h3 className="work-history-title">Work History</h3>
-            <div className="work-history-list">
-              <div className="work-history-item">
-                <div className="work-company">Active Creative Studio</div>
-                <div className="work-role">2 Years as Visual Designer & UI/UX Designer, Tel-Aviv</div>
-              </div>
-              <div className="work-history-item">
-                <div className="work-company">Active Communication</div>
-                <div className="work-role">1 Year as Visual & UI/UX Designer, Tel-Aviv</div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
