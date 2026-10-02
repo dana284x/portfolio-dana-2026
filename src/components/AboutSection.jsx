@@ -18,22 +18,30 @@ export default function AboutSection() {
         </div>
 
         <div className="resume-details">
-          <div className="resume-group">
-            <div className="resume-group-title">Skills:</div>
-            <div className="resume-item-name" style={{ borderBottom: '1px solid #ddd', paddingBottom: '8px', display: 'inline-block' }}>
-              Figma
-            </div>
+          <div className="skills-section">
+            <h3 className="skills-title">Skills</h3>
+            <ul className="skills-list">
+              <li className="skill-item">Figma</li>
+              <li className="skill-item">
+                Adobe Creative Suite / Illustrator, Indesign, Photoshop, After Effects, Premiere Pro
+              </li>
+              <li className="skill-item">
+                AI Tools & Prototyping / LLMs, Generative Image & Video, Vibe Coding, Ai Prototyping
+              </li>
+            </ul>
           </div>
 
-          <div className="resume-group">
-            <div className="resume-group-title">Work History:</div>
-            <div style={{ marginBottom: '16px' }}>
-              <div className="resume-item-name">Active Creative Studio</div>
-              <div className="resume-item-sub">2 Years as Visual Designer & UI/UX Designer, Tel-Aviv</div>
-            </div>
-            <div>
-              <div className="resume-item-name">Active Communication</div>
-              <div className="resume-item-sub">1 Year as Visual & UI/UX Designer, Tel-Aviv</div>
+          <div className="work-history-section">
+            <h3 className="work-history-title">Work History</h3>
+            <div className="work-history-list">
+              <div className="work-history-item">
+                <div className="work-company">Active Creative Studio</div>
+                <div className="work-role">2 Years as Visual Designer & UI/UX Designer, Tel-Aviv</div>
+              </div>
+              <div className="work-history-item">
+                <div className="work-company">Active Communication</div>
+                <div className="work-role">1 Year as Visual & UI/UX Designer, Tel-Aviv</div>
+              </div>
             </div>
           </div>
         </div>
