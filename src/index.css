@@ -1751,9 +1751,10 @@ body {
   display: block;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .sync-phones-grid {
-    gap: 16px;
+    grid-template-columns: 1fr;
+    gap: 24px;
   }
 }
 
