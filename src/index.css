@@ -1727,3 +1727,18 @@ body {
 .reveal-delay-2 { transition-delay: 0.24s; }
 .reveal-delay-3 { transition-delay: 0.36s; }
 
+/* Sync Side-by-Side Phone Videos */
+.sync-phones-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .sync-phones-grid {
+    gap: 16px;
+  }
+}
+
+
