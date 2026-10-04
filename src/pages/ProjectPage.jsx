@@ -170,24 +170,22 @@ export default function ProjectPage() {
         {/* Media Banner 2 - Side-by-side videos (sync-phone1 & sync-phone2) */}
         <div className="container reveal-on-scroll" style={{ marginTop: '80px', marginBottom: '80px' }}>
           <div className="sync-phones-grid">
-            <div style={{ width: '100%', borderRadius: '16px', overflow: 'hidden' }}>
+            <div className="sync-phone-video-card">
               <video
                 src="/art/sync-phone1.mp4"
                 autoPlay
                 loop
                 muted
                 playsInline
-                style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '16px' }}
               />
             </div>
-            <div style={{ width: '100%', borderRadius: '16px', overflow: 'hidden' }}>
+            <div className="sync-phone-video-card">
               <video
                 src="/art/sync-phone2.mp4"
                 autoPlay
                 loop
                 muted
                 playsInline
-                style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '16px' }}
               />
             </div>
           </div>

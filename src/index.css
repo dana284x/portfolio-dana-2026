@@ -1735,6 +1735,22 @@ body {
   width: 100%;
 }
 
+.sync-phone-video-card {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: #EAEAEA;
+}
+
+.sync-phone-video-card video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
 @media (max-width: 600px) {
   .sync-phones-grid {
     gap: 16px;
